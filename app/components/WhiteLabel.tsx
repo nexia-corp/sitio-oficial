@@ -296,68 +296,126 @@ export function WhiteLabel() {
               exit={{ opacity: 0, y: 30 }}
               transition={{ duration: 0.6 }}
             >
-              {/* Landing Preview */}
-              <div className="glass rounded-xl p-6 border border-nexia-blue border-opacity-30">
-                <div className="mb-4">
-                  <div className={`inline-block px-4 py-2 rounded-full bg-gradient-to-r ${businessData.color} text-white text-sm font-semibold mb-3`}>
-                    {businessData.icon} {businessName}
+              {/* Landing Preview - REAL SIMULADA */}
+              <div className="rounded-xl overflow-hidden border border-nexia-blue border-opacity-30 bg-gradient-to-b from-slate-900 to-slate-800 h-full flex flex-col">
+                {/* URL Bar Simulada */}
+                <div className="bg-slate-950 px-4 py-3 border-b border-nexia-blue border-opacity-20 flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  <div className="flex-1 ml-4 text-xs text-nexia-muted font-mono">
+                    {businessName.toLowerCase().replace(/\s+/g, '')}.com
                   </div>
-                  <h3 className="text-2xl font-syne font-700 text-white mb-2">
-                    {businessName}
-                  </h3>
-                  <p className="text-sm text-nexia-muted">
-                    Landing personalizada con agente IA integrado
-                  </p>
                 </div>
 
-                {/* Mock Landing */}
-                <div className="bg-nexia-dark-bg border border-nexia-blue border-opacity-20 rounded-lg p-4 mb-6 min-h-[300px] flex flex-col">
-                  <div className="mb-4">
-                    <h4 className="text-white font-bold mb-2">Tu Landing: {businessName}</h4>
-                    <p className="text-xs text-nexia-muted">
-                      ✓ Optimizada para conversión<br/>
-                      ✓ Integrada con agente IA<br/>
-                      ✓ Responsive en móvil
+                {/* Landing Content */}
+                <div className="flex-1 overflow-y-auto p-6 space-y-4">
+                  {/* Hero Section */}
+                  <div className="text-center mb-6">
+                    <div className={`inline-block px-3 py-1 rounded-full bg-gradient-to-r ${businessData.color} text-white text-xs font-bold mb-3`}>
+                      {businessData.icon} {businessName}
+                    </div>
+                    <h1 className="text-2xl font-bold text-white mb-2">
+                      {businessName}
+                    </h1>
+                    <p className="text-sm text-gray-300 mb-4">
+                      Somos tu mejor opción. Disponibles 24/7 para ti.
                     </p>
                   </div>
 
-                  {/* Results */}
-                  <div className="grid grid-cols-3 gap-2 mt-auto">
-                    <div className="bg-nexia-blue bg-opacity-10 border border-nexia-cyan border-opacity-30 rounded p-3 text-center">
-                      <p className="text-nexia-cyan font-bold text-lg">
+                  {/* CTA Button */}
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    className={`w-full py-3 bg-gradient-to-r ${businessData.color} text-white font-bold rounded-lg text-sm`}
+                  >
+                    💬 Consulta Ahora
+                  </motion.button>
+
+                  {/* Features */}
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-xs text-gray-300">
+                      <span className="text-nexia-cyan">✓</span> Respuesta inmediata
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-gray-300">
+                      <span className="text-nexia-cyan">✓</span> Disponible siempre
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-gray-300">
+                      <span className="text-nexia-cyan">✓</span> Sin tiempos de espera
+                    </div>
+                  </div>
+
+                  {/* Form */}
+                  <div className="bg-slate-950 rounded-lg p-3 space-y-2 border border-nexia-blue border-opacity-20">
+                    <input
+                      type="text"
+                      placeholder="Tu nombre..."
+                      className="w-full px-3 py-2 bg-slate-900 border border-gray-600 rounded text-xs text-white placeholder-gray-500 focus:outline-none focus:border-nexia-cyan"
+                      readOnly
+                    />
+                    <input
+                      type="email"
+                      placeholder="Tu email..."
+                      className="w-full px-3 py-2 bg-slate-900 border border-gray-600 rounded text-xs text-white placeholder-gray-500 focus:outline-none focus:border-nexia-cyan"
+                      readOnly
+                    />
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      className={`w-full py-2 bg-gradient-to-r ${businessData.color} text-white font-bold rounded text-xs`}
+                    >
+                      Enviar
+                    </motion.button>
+                  </div>
+
+                  {/* Stats */}
+                  <div className="grid grid-cols-3 gap-2 pt-2">
+                    <div className="bg-slate-950 border border-nexia-blue border-opacity-20 rounded p-2 text-center">
+                      <p className="text-nexia-cyan font-bold text-sm">
                         {businessData.metrics.m1v}
                       </p>
-                      <p className="text-xs text-nexia-muted">
+                      <p className="text-xs text-gray-400">
                         {businessData.metrics.m1}
                       </p>
                     </div>
-                    <div className="bg-nexia-blue bg-opacity-10 border border-nexia-cyan border-opacity-30 rounded p-3 text-center">
-                      <p className="text-nexia-cyan font-bold text-lg">
+                    <div className="bg-slate-950 border border-nexia-blue border-opacity-20 rounded p-2 text-center">
+                      <p className="text-nexia-cyan font-bold text-sm">
                         {businessData.metrics.m2v}
                       </p>
-                      <p className="text-xs text-nexia-muted">
+                      <p className="text-xs text-gray-400">
                         {businessData.metrics.m2}
                       </p>
                     </div>
-                    <div className="bg-nexia-blue bg-opacity-10 border border-nexia-cyan border-opacity-30 rounded p-3 text-center">
-                      <p className="text-nexia-cyan font-bold text-lg">
+                    <div className="bg-slate-950 border border-nexia-blue border-opacity-20 rounded p-2 text-center">
+                      <p className="text-nexia-cyan font-bold text-sm">
                         {businessData.metrics.m3v}
                       </p>
-                      <p className="text-xs text-nexia-muted">
+                      <p className="text-xs text-gray-400">
                         {businessData.metrics.m3}
                       </p>
                     </div>
                   </div>
+
+                  {/* Testimonial */}
+                  <div className="bg-slate-950 border border-nexia-blue border-opacity-20 rounded p-3 text-center">
+                    <p className="text-xs text-gray-300 italic mb-2">
+                      "El mejor servicio que existe"
+                    </p>
+                    <p className="text-xs text-nexia-cyan font-semibold">
+                      ⭐⭐⭐⭐⭐ Cliente verificado
+                    </p>
+                  </div>
                 </div>
 
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => setIsGenerated(false)}
-                  className="w-full py-3 bg-nexia-blue text-white font-semibold rounded-lg hover:shadow-glow-blue transition-all"
-                >
-                  Probar otro negocio ↻
-                </motion.button>
+                {/* Bottom */}
+                <div className="border-t border-nexia-blue border-opacity-20 px-6 py-3 bg-slate-950">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => setIsGenerated(false)}
+                    className="w-full py-2 bg-nexia-blue text-white font-semibold rounded text-xs hover:shadow-glow-blue transition-all"
+                  >
+                    Probar otro negocio ↻
+                  </motion.button>
+                </div>
               </div>
 
           {/* Chat Demo */}

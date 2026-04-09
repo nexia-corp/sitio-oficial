@@ -5,6 +5,7 @@ export { ProblemSection } from './ProblemSection';
 export { Services } from './Services';
 export { Process } from './Process';
 export { Stats } from './Stats';
+export { WhiteLabel } from './WhiteLabel';
 export { Testimonials } from './Testimonials';
 export { Pricing } from './Pricing';
 export { FAQ } from './FAQ';

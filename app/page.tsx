@@ -8,6 +8,7 @@ import {
   Services,
   Process,
   Stats,
+  WhiteLabel,
   Testimonials,
   Pricing,
   FAQ,
@@ -45,6 +46,9 @@ export default function Home() {
 
         {/* Stats */}
         <Stats />
+
+        {/* WhiteLabel Demo */}
+        <WhiteLabel />
 
         {/* Testimonials */}
         <Testimonials />

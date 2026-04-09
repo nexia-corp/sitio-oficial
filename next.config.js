@@ -3,6 +3,7 @@ const nextConfig = {
   output: 'export',
   basePath: '/sitio-oficial',
   assetPrefix: '/sitio-oficial/',
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },

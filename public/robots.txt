@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nexia-corp.com/sitemap.xml
+
+Disallow: /admin
+Disallow: /.next
+Disallow: /api

@@ -32,6 +32,9 @@ export default function Home() {
         {/* Hero Section */}
         <Hero />
 
+        {/* Final CTA - Early */}
+        <FinalCTA />
+
         {/* Tech Logos */}
         <TechLogos />
 
@@ -58,9 +61,6 @@ export default function Home() {
 
         {/* FAQ */}
         <FAQ />
-
-        {/* Final CTA */}
-        <FinalCTA />
 
         {/* Footer */}
         <Footer />

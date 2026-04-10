@@ -55,7 +55,7 @@ export function Process() {
     <section
       id="proceso"
       ref={ref}
-      className="w-full py-24 px-6 bg-nexia-light-bg text-nexia-dark-bg"
+      className="w-full py-32 px-6 bg-nexia-light-bg text-nexia-dark-bg border-t border-nexia-blue border-opacity-15"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}

@@ -53,7 +53,7 @@ function FAQItem({ question, answer, index, isInView }: FAQItemProps) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-4 flex items-center justify-between hover:bg-nexia-blue hover:bg-opacity-5 transition-colors"
       >
-        <span className="font-semibold text-left text-white text-sm">
+        <span className="font-semibold text-left text-nexia-text text-sm">
           {question}
         </span>
         <motion.svg
@@ -97,7 +97,7 @@ export function FAQ() {
     <section
       id="faq"
       ref={ref}
-      className="w-full py-24 px-6 bg-nexia-dark-bg"
+      className="w-full py-32 px-6 bg-white border-t border-nexia-blue border-opacity-15"
     >
       <div className="max-w-3xl mx-auto">
         {/* Header */}

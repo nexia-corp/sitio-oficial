@@ -13,7 +13,7 @@ export function FinalCTA() {
     <section
       id="cta"
       ref={ref}
-      className="relative w-full min-h-screen flex items-center justify-center px-6 bg-nexia-dark-bg overflow-hidden"
+      className="relative w-full min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-white to-nexia-mid-bg overflow-hidden border-t border-nexia-blue border-opacity-15"
     >
       {/* Glowing orb background */}
       <motion.div
@@ -33,7 +33,7 @@ export function FinalCTA() {
       >
         {/* Headline */}
         <motion.h2
-          className="font-syne font-800 text-hero-lg md:text-hero leading-tight text-white mb-6"
+          className="font-syne font-800 text-hero-lg md:text-hero leading-tight text-nexia-text mb-6"
           initial={{ opacity: 0, y: -20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.8, delay: 0.1 }}

@@ -27,7 +27,7 @@ export function Hero() {
   };
 
   return (
-    <section id="hero" className="relative w-full h-screen overflow-hidden">
+    <section id="hero" className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-white via-white to-nexia-mid-bg">
       {/* Mesh Gradient Background */}
       <div className="absolute inset-0 mesh-gradient" />
 
@@ -69,9 +69,9 @@ export function Hero() {
         {/* Headline */}
         <motion.div variants={itemVariants} className="text-center mb-6">
           <h1 className="font-syne font-800 text-5xl sm:text-6xl md:text-hero-lg leading-tight tracking-tighter">
-            <span className="text-white">Tu negocio,</span>
+            <span className="text-nexia-text">Tu negocio,</span>
             <br />
-            <span className="bg-gradient-to-r from-nexia-cyan via-nexia-cyan to-nexia-blue bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-nexia-blue via-nexia-violet to-nexia-cyan bg-clip-text text-transparent">
               en piloto automático.
             </span>
           </h1>
@@ -100,7 +100,7 @@ export function Hero() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 border border-white border-opacity-20 text-white font-medium rounded-lg hover:border-opacity-100 transition-all duration-300"
+            className="px-8 py-3 border-2 border-nexia-blue text-nexia-blue font-medium rounded-lg hover:bg-nexia-mid-bg transition-all duration-300"
           >
             Demo en vivo
           </motion.button>
@@ -115,20 +115,20 @@ export function Hero() {
             {[...Array(5)].map((_, i) => (
               <div
                 key={i}
-                className="w-10 h-10 rounded-full bg-gradient-to-br from-nexia-blue to-nexia-violet flex items-center justify-center text-white text-xs font-bold border-2 border-nexia-dark-bg"
+                className="w-10 h-10 rounded-full bg-gradient-to-br from-nexia-blue to-nexia-violet flex items-center justify-center text-white text-xs font-bold border-2 border-white shadow-md"
               >
                 {String.fromCharCode(65 + i)}
               </div>
             ))}
           </div>
-          <p className="text-sm text-nexia-muted">
+          <p className="text-sm text-nexia-text font-medium">
             10+ negocios ya automatizan con Nexia
           </p>
         </motion.div>
       </motion.div>
 
       {/* Marquee */}
-      <div className="absolute bottom-0 w-full bg-gradient-to-t from-nexia-dark-bg via-nexia-dark-bg to-transparent py-8 overflow-hidden">
+      <div className="absolute bottom-0 w-full bg-gradient-to-t from-nexia-mid-bg via-nexia-mid-bg to-transparent py-8 overflow-hidden">
         <motion.div
           className="flex gap-12 whitespace-nowrap"
           animate={{ x: [0, -1920] }}

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export function Footer() {
   return (
-    <footer className="w-full bg-nexia-dark-bg border-t border-nexia-blue border-opacity-20">
+    <footer className="w-full bg-white border-t border-nexia-blue border-opacity-20">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 pb-12 border-b border-nexia-blue border-opacity-10">
@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="w-3 h-3 bg-nexia-blue rounded" />
-              <span className="text-xl font-bold font-syne tracking-tight text-white">
+              <span className="text-xl font-bold font-syne tracking-tight text-nexia-text">
                 NEXIA
               </span>
             </div>
@@ -24,14 +24,14 @@ export function Footer() {
           {/* Links */}
           <div className="flex items-start gap-12">
             <div>
-              <h4 className="text-xs uppercase tracking-widest font-semibold text-white mb-4">
+              <h4 className="text-xs uppercase tracking-widest font-semibold text-nexia-text mb-4">
                 Compañía
               </h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#servicios"
-                    className="text-sm text-nexia-muted hover:text-white transition"
+                    className="text-sm text-nexia-muted hover:text-nexia-text transition"
                   >
                     Servicios
                   </a>
@@ -39,7 +39,7 @@ export function Footer() {
                 <li>
                   <a
                     href="#precios"
-                    className="text-sm text-nexia-muted hover:text-white transition"
+                    className="text-sm text-nexia-muted hover:text-nexia-text transition"
                   >
                     Precios
                   </a>
@@ -47,7 +47,7 @@ export function Footer() {
                 <li>
                   <a
                     href="#contacto"
-                    className="text-sm text-nexia-muted hover:text-white transition"
+                    className="text-sm text-nexia-muted hover:text-nexia-text transition"
                   >
                     Contacto
                   </a>
@@ -55,7 +55,7 @@ export function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-sm text-nexia-muted hover:text-white transition"
+                    className="text-sm text-nexia-muted hover:text-nexia-text transition"
                   >
                     Privacidad
                   </a>
@@ -68,7 +68,7 @@ export function Footer() {
           <div className="flex flex-col items-end md:items-start">
             <a
               href="mailto:hola@nexia-corp.com"
-              className="text-sm font-medium text-nexia-cyan hover:text-white transition mb-6"
+              className="text-sm font-medium text-nexia-cyan hover:text-nexia-text transition mb-6"
             >
               hola@nexia-corp.com
             </a>
@@ -77,7 +77,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
-              className="w-10 h-10 rounded-full bg-nexia-blue bg-opacity-10 border border-nexia-blue border-opacity-30 flex items-center justify-center text-nexia-cyan hover:text-white transition"
+              className="w-10 h-10 rounded-full bg-nexia-blue bg-opacity-10 border border-nexia-blue border-opacity-30 flex items-center justify-center text-nexia-cyan hover:text-nexia-text transition"
             >
               <svg
                 className="w-5 h-5"

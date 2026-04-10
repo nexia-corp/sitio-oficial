@@ -56,7 +56,7 @@ export function Testimonials() {
     <section
       id="testimonios"
       ref={ref}
-      className="w-full py-24 px-6 bg-nexia-dark-bg"
+      className="w-full py-32 px-6 bg-white border-t border-nexia-blue border-opacity-15"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -69,7 +69,7 @@ export function Testimonials() {
           <p className="text-xs uppercase tracking-widest text-nexia-muted font-semibold mb-3">
             Clientes
           </p>
-          <h2 className="font-syne font-700 text-section-title-md md:text-section-title text-white leading-tight">
+          <h2 className="font-syne font-700 text-section-title-md md:text-section-title text-nexia-text leading-tight">
             Lo que dicen los negocios que ya automatizan.
           </h2>
         </motion.div>
@@ -93,7 +93,7 @@ export function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-white font-medium leading-relaxed mb-8 flex-grow">
+              <p className="text-nexia-text font-medium leading-relaxed mb-8 flex-grow">
                 {testimonial.quote}
               </p>
 
@@ -112,7 +112,7 @@ export function Testimonials() {
                   {testimonial.initials}
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-sm">
+                  <p className="font-semibold text-nexia-text text-sm">
                     {testimonial.author}
                   </p>
                   <p className="text-xs text-nexia-muted">

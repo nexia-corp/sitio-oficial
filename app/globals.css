@@ -6,13 +6,13 @@
 
 :root {
   --nexia-blue: #0057FF;
-  --nexia-violet: #6D28D9;
+  --nexia-violet: #7C3AED;
   --nexia-cyan: #00F5C4;
-  --nexia-dark-bg: #05070F;
-  --nexia-mid-bg: #0D1117;
-  --nexia-light-bg: #F8FAFF;
-  --nexia-text: #E8EEFF;
-  --nexia-muted: #6B7A99;
+  --nexia-dark-bg: #FFFFFF;
+  --nexia-mid-bg: #F5F7FF;
+  --nexia-light-bg: #FFFFFF;
+  --nexia-text: #0F172A;
+  --nexia-muted: #64748B;
 }
 
 * {
@@ -28,7 +28,9 @@ html {
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: var(--nexia-dark-bg);
+  background-color: #FFFFFF;
+  background-image: radial-gradient(circle at 20% 50%, rgba(0, 87, 255, 0.03) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.03) 0%, transparent 50%);
   color: var(--nexia-text);
   line-height: 1.7;
 }
@@ -62,9 +64,9 @@ body {
 .mesh-gradient {
   background: linear-gradient(
     -45deg,
-    rgba(0, 87, 255, 0.1),
-    rgba(109, 40, 217, 0.1),
-    rgba(0, 245, 196, 0.05)
+    rgba(0, 87, 255, 0.06),
+    rgba(124, 58, 237, 0.06),
+    rgba(0, 245, 196, 0.03)
   );
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
@@ -73,14 +75,14 @@ body {
 /* Glass Morphism */
 .glass {
   backdrop-filter: blur(10px);
-  background: rgba(13, 17, 23, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 87, 255, 0.15);
 }
 
 .glass-light {
   backdrop-filter: blur(10px);
-  background: rgba(248, 250, 255, 0.4);
-  border: 1px solid rgba(0, 87, 255, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 87, 255, 0.2);
 }
 
 /* Glow Effects */

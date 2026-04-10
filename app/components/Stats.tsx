@@ -59,7 +59,7 @@ export function Stats() {
     <section
       id="stats"
       ref={ref}
-      className="w-full py-24 px-6 bg-nexia-dark-bg relative overflow-hidden"
+      className="w-full py-32 px-6 bg-nexia-mid-bg relative overflow-hidden border-t border-nexia-blue border-opacity-15"
     >
       {/* Subtle dot grid */}
       <div

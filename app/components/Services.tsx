@@ -58,7 +58,7 @@ export function Services() {
     <section
       id="servicios"
       ref={ref}
-      className="w-full py-24 px-6 bg-nexia-dark-bg"
+      className="w-full py-32 px-6 bg-white border-t border-nexia-blue border-opacity-15"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -71,7 +71,7 @@ export function Services() {
           <p className="text-xs uppercase tracking-widest text-nexia-muted font-semibold mb-3">
             Lo que construimos
           </p>
-          <h2 className="font-syne font-700 text-section-title-md md:text-section-title text-white leading-tight">
+          <h2 className="font-syne font-700 text-section-title-md md:text-section-title text-nexia-text leading-tight">
             Sistemas que trabajan mientras tú descansas.
           </h2>
         </motion.div>
@@ -97,7 +97,7 @@ export function Services() {
 
               {/* Title & Tag */}
               <div className="flex items-start justify-between mb-3">
-                <h3 className="font-syne font-700 text-white text-lg leading-tight">
+                <h3 className="font-syne font-700 text-nexia-text text-lg leading-tight">
                   {service.title}
                 </h3>
                 {service.tag && (

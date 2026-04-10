@@ -8,15 +8,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand colors
-        'nexia-blue': '#0057FF',
-        'nexia-violet': '#6D28D9',
-        'nexia-cyan': '#00F5C4',
-        'nexia-dark-bg': '#05070F',
-        'nexia-mid-bg': '#0D1117',
-        'nexia-light-bg': '#F8FAFF',
-        'nexia-text': '#E8EEFF',
-        'nexia-muted': '#6B7A99',
+        // Brand colors - LIGHT PREMIUM
+        'nexia-blue': '#0057FF',         // Electric blue (primary)
+        'nexia-violet': '#7C3AED',       // Vibrant purple (secondary)
+        'nexia-cyan': '#00F5C4',         // Cyan accent
+        'nexia-dark-bg': '#FFFFFF',      // White background
+        'nexia-mid-bg': '#F5F7FF',       // Ultra light gray-blue
+        'nexia-light-bg': '#FFFFFF',     // White (same as dark-bg now)
+        'nexia-text': '#0F172A',         // Dark navy text
+        'nexia-muted': '#64748B',        // Slate gray
       },
       fontFamily: {
         syne: ['Syne', 'sans-serif'],

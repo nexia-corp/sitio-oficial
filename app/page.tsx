@@ -5,6 +5,7 @@ import {
   Hero,
   TechLogos,
   ProblemSection,
+  AIAnalyzer,
   Services,
   Process,
   Stats,
@@ -40,6 +41,9 @@ export default function Home() {
 
         {/* Problem Section */}
         <ProblemSection />
+
+        {/* AI Analyzer */}
+        <AIAnalyzer />
 
         {/* Services */}
         <Services />

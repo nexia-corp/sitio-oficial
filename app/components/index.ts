@@ -3,6 +3,7 @@ export { Hero } from './Hero';
 export { TechLogos } from './TechLogos';
 export { ProblemSection } from './ProblemSection';
 export { AIAnalyzer } from './AIAnalyzer';
+export { AIAnalyzerWidget } from './AIAnalyzerWidget';
 export { Services } from './Services';
 export { Process } from './Process';
 export { Stats } from './Stats';

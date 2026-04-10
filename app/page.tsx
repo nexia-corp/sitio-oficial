@@ -5,7 +5,6 @@ import {
   Hero,
   TechLogos,
   ProblemSection,
-  AIAnalyzer,
   Services,
   Process,
   Stats,
@@ -17,6 +16,7 @@ import {
   Footer,
   CustomCursor,
   FloatingWhatsApp,
+  AIAnalyzerWidget,
 } from './components';
 
 export default function Home() {
@@ -41,9 +41,6 @@ export default function Home() {
 
         {/* Problem Section */}
         <ProblemSection />
-
-        {/* AI Analyzer */}
-        <AIAnalyzer />
 
         {/* Services */}
         <Services />
@@ -70,7 +67,8 @@ export default function Home() {
         <Footer />
       </main>
 
-      {/* Floating WhatsApp Button */}
+      {/* Floating Widgets */}
+      <AIAnalyzerWidget />
       <FloatingWhatsApp />
     </>
   );
